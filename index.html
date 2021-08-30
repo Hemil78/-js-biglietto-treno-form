@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Biglietto del treno-form</title>
+    </head>
+    <body>
+        
+        <div class="container">
+            <!-- form biglietto -->
+            <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+            <div class="form-biglietto">
+
+                <div class="form-biglietto-campi">
+
+                    <div class="space-text">
+                        <label for="name">Nome e Cognome</label>
+                        <input type="text" name = "name" id = "name">
+                    </div>
+
+                    <div class="space-text">
+                        <label for="km">Km da percorrere</label>
+                        <input type="number" name = "km" id = "km">
+                    </div>
+                        
+                    <div class="space-text">
+                        <label for="fascia">Fascia d'età</label>
+                        <select name="fascia" id="fascia">
+                            <option value="minorenne">Minorenne</option>
+                            <option value="maggiorenne">Maggiorenne</option>
+                            <option value="over">Over 65</option>
+                        </select>
+                    </div>
+                        
+                </div>
+
+
+                <div class="form-biglietto-bottoni">
+                    <button id= "genera" >Genera</button>
+                    <button id= "annulla" >Annulla</button>
+                </div>
+
+            </div>
+
+            <!-- /form biglietto -->
+
+            <!-- biglietto -->
+            <h2>IL TUO BIGLIETTO<span id="points">...</span></h2>
+            <div id= "biglietto" class="biglietto">
+                <h3>DETTAGLIO PASSEGGERO</h3>
+                <div class="box-dati">
+                    <div>
+                        <strong>NOME PASSEGGERO:<br>
+                            <span id= "nome-passeggero"></span>
+                        </strong>
+                    </div>
+                    <div>
+                        <strong>Offerta:</strong><br>
+                        <span id= "tipo-offerta"></span>
+                    </div>
+                    <div>
+                        <strong>Carrozza:</strong><br>
+                        <span  id= "carrozza"></span>
+                    </div>
+                    <div>
+                        <strong>Codice CP:</strong><br>
+                        <span id= "codice"></span>
+                    </div>
+                    <div>
+                        <strong>Costo Biglietto:</strong><br>
+                        <span id= "totale"></span> € 
+                    </div>
+                </div>
+            </div>
+
+            <!-- /biglietto -->
+
+        </div>
+        
+        <script src="js/script.js"></script>
+
+    </body>
+</html>
+

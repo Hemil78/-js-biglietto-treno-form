@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* common */
+
+body{
+    background-color: #B91450;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input, select{
+    display: block;
+    border: none;
+    border-bottom: 1px solid #B91450;
+    border-radius: 10px;
+    text-align: center;
+    padding: 8px;
+    font-weight: 700;
+    font-size: 16px;
+}
+label{
+    color: #B91450;
+}
+
+.container{
+    max-width: 80%;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+}
+
+.form-biglietto, .biglietto {
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+button{
+    padding: 10px;
+    border: 1px solid #B91450;
+    color: #B91450;
+    font-size: 14px;
+    border-radius: 8px;
+    margin: 0 20px 0 20px;
+    font-weight: 700;
+}
+button:hover{
+    background-color: rgb(173, 173, 173);
+}
+
+/* form-biglietto */
+.form-biglietto-campi{
+    display: flex;
+    justify-content: space-evenly;
+}
+.space-text{
+    line-height: 40px;
+}
+
+.form-biglietto-bottoni{
+    margin-top: 30px;
+}
+
+/* biglietto */
+.biglietto{
+    display: none;
+}
+
+.biglietto.open{
+    display: block;
+    width: 100%;
+}
+.box-dati{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.box-dati div{
+    line-height: 50px;
+    text-align: start;
+    padding: 5px;
+}
+.box-dati div:first-child{
+    background-color: lightgray;
+    border-radius: 10px;
+}
+.box-dati div:not(firt-child){
+    border-top: 1px solid rgb(172, 172, 172);
+    border-bottom: 1px solid rgb(172, 172, 172);
+    border-radius: 10px;
+}
+h2{
+    color: #fff;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+h3{
+    display: block;
+    margin-bottom: 15px;
+}
+
