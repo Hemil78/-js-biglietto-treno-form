@@ -86,8 +86,9 @@ button:hover{
 .box-dati div:first-child{
     background-color: lightgray;
     border-radius: 10px;
+    border: none;
 }
-.box-dati div:not(firt-child){
+.box-dati div{
     border-top: 1px solid rgb(172, 172, 172);
     border-bottom: 1px solid rgb(172, 172, 172);
     border-radius: 10px;
